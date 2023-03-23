@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { FaPlusCircle, FaRegCircle, FaTrashAlt, FaRegSmileBeam } from "react-icons/fa";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container-app'>
+      <div className='profile'>
+        <div id='date'>Jueves 23 de marzo</div>
+        <h1>Hola! <FaRegSmileBeam className='smile'/></h1>
+        <span>Vamos a cumplir esas metas!</span>
+      </div>
+      <div className='add-task'>
+        <input type='text' id='input' placeholder='Add a task'/>
+        <FaPlusCircle id='enter'/>
+      </div>
+      <div className='task-section'>
+        <h3>Estas son tus tareas pendientes.</h3>
+        <ul id='list'>
+          <li>
+            <FaRegCircle className='icons' data='done' id='0'/>
+            <p className='text line-through'>hola</p>
+            <FaTrashAlt className='icons' data='deleted' id='0'/>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

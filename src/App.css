@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #04d4c3; 
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile h1 {
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile span {
+    color: white;
+    letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#date {
+    color: white;
+    padding: 50px 0 5px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.add-task {
+    background-color: white;
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-task input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+}
+
+.add-task input::placeholder {
+    font-size: 1.1rem;
+    color: blueviolet;
+}
+
+#enter {
+    font-size: 50px;
+    color: blueviolet;
+}
+
+#enter:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container-app {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.task-section h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.task-section li {
+    display: flex;
+    background-color: aquamarine;
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.smile {
+    font-size: 25px;
+    color: blueviolet;
+}
+
+.icons {
+    font-size: 25px;
+    color: white;
+}
+
+.icons:hover {
+    color: rgb(142, 142, 236);
+    cursor: pointer;
+}
+
+.task-section > ul p {
+    font-size: 1.2rem;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: rgb(142, 142, 236);
 }
